@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pausa Ativa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Mulish:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#inicio">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="7" r="4.2" fill="#FFC72C"/><path d="M20 13v12M20 15l10-8M20 16l-9 7M20 25l-7 12M20 25l7 12" stroke="#FFC72C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+      <span><b>PAUSA ATIVA</b><small>Movimente-se. Cuide de você.</small></span>
+    </a>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#inicio" data-r="inicio">Início</a>
+      <a href="#exercicios" data-r="exercicios">Exercícios</a>
+      <a href="#sobre" data-r="sobre">Sobre o Projeto</a>
+      <a href="#dicas" data-r="dicas">Dicas de Saúde</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" tabindex="-1" style="outline:none">
+
+  <!-- INÍCIO -->
+  <section id="v-inicio" class="view">
+    <div class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Projeto Integrador · Fisioterapia do Trabalho</p>
+          <h1><span>Pequenas pausas,</span> <em>grandes benefícios</em></h1>
+          <p class="lead">Exercícios de mobilidade e alongamento para promover o bem-estar no trabalho.</p>
+          <a class="btn" href="#exercicios">Começar agora
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <p class="hero-meta">10 exercícios · sem equipamentos · feitos para o ambiente de trabalho</p>
+        </div>
+        <div class="hero-art" id="heroArt"></div>
+      </div>
+    </div>
+    <div class="sec">
+      <div class="wrap">
+        <h2>Por que fazer pausas ativas?</h2>
+        <p class="sec-lead">Poucos minutos de movimento ao longo do turno ajudam o corpo a aguentar melhor a rotina.</p>
+        <div class="benefits" id="benefits"></div>
+      </div>
+    </div>
+    <div class="cta">
+      <div class="wrap">
+        <div>
+          <h2>Faça sua pausa agora</h2>
+          <p>Escolha um exercício e siga o passo a passo.</p>
+        </div>
+        <a class="btn dark" href="#exercicios">Ver exercícios</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXERCÍCIOS -->
+  <section id="v-exercicios" class="view" hidden>
+    <div class="wrap">
+      <div class="page-head">
+        <h1>Exercícios</h1>
+        <p>Escolha o exercício e cuide do seu bem-estar. Toque em um cartão para ver as orientações completas.</p>
+      </div>
+      <div class="chips" id="chips" role="group" aria-label="Filtrar por região do corpo"></div>
+      <div id="exList" style="padding-bottom:64px"></div>
+    </div>
+  </section>
+
+  <!-- DETALHE DO EXERCÍCIO -->
+  <section id="v-detalhe" class="view" hidden></section>
+
+  <!-- SOBRE -->
+  <section id="v-sobre" class="view" hidden>
+    <div class="wrap">
+      <div class="page-head">
+        <h1>Sobre o projeto</h1>
+        <p>Uma iniciativa acadêmica de Fisioterapia do Trabalho, que usa a tecnologia como ferramenta de educação em saúde.</p>
+      </div>
+      <div class="cols">
+        <div class="info"><h3>O que é</h3><p>O Pausa Ativa é um site com exercícios de mobilidade e alongamento para fazer durante o expediente, sem equipamentos e em poucos minutos. Cada exercício traz ilustração, passo a passo, tempo de execução, frequência e benefício.</p></div>
+        <div class="info"><h3>Por que foi desenvolvido</h3><p>Atividades com muito tempo em pé, movimentos repetitivos e ritmo acelerado exigem bastante do corpo. Faltava um material simples e de fácil acesso para orientar pausas ativas no próprio local de trabalho.</p></div>
+        <div class="info"><h3>Qual problema aborda</h3><p>Tensões e desconfortos em pescoço, ombros, punhos, coluna e pernas, que podem surgir ou piorar quando o corpo passa horas na mesma posição ou repete os mesmos gestos.</p></div>
+        <div class="info"><h3>Público-alvo</h3><p>Funcionários do McDonald's, de todas as áreas da operação.</p></div>
+      </div>
+      <div class="goal">
+        <h3>Objetivo</h3>
+        <p>Promover a saúde musculoesquelética dos trabalhadores por meio de orientações de exercícios de mobilidade e alongamento.</p>
+      </div>
+
+      <h2 class="sub">Como foi desenvolvido</h2>
+      <ol class="tl">
+        <li><p>Identificação da necessidade de promover a saúde musculoesquelética dos trabalhadores.</p></li>
+        <li><p>Pesquisa e seleção de exercícios de alongamento e mobilidade.</p></li>
+        <li><p>Organização das orientações e demonstrações dos exercícios.</p></li>
+        <li><p>Desenvolvimento de um site para facilitar o acesso dos funcionários às informações.</p></li>
+      </ol>
+      <div class="note" style="margin-bottom:64px">O projeto é um Projeto Integrador do curso de Fisioterapia, na área de Fisioterapia do Trabalho. A tecnologia leva o conhecimento até o trabalhador, direto no celular, na hora da pausa.</div>
+    </div>
+  </section>
+
+  <!-- DICAS -->
+  <section id="v-dicas" class="view" hidden>
+    <div class="wrap">
+      <div class="page-head">
+        <h1>Dicas de saúde</h1>
+        <p>Cuidados curtos e práticos para o dia a dia de trabalho.</p>
+      </div>
+      <div class="tips" id="tips" style="padding-bottom:64px"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="brand">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="7" r="4.2" fill="#FFC72C"/><path d="M20 13v12M20 15l10-8M20 16l-9 7M20 25l-7 12M20 25l7 12" stroke="#FFC72C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+      <span><b>PAUSA ATIVA</b><small>Movimente-se. Cuide de você.</small></span>
+    </div>
+    <p class="meta">Projeto Integrador — Fisioterapia</p>
+    <p class="disc">O conteúdo deste site tem finalidade educativa e não substitui uma avaliação individual com um fisioterapeuta.</p>
+  </div>
+</footer>
+
+<noscript><p style="padding:24px;text-align:center">Ative o JavaScript para ver os exercícios.</p></noscript>
+
+<script src="js/ilustracoes.js"></script>
+<script src="js/dados.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
